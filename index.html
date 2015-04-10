@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Designing with Development in Mind</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Alley Interactive">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/alley.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section class="center" data-background="images/flatiron.jpg">
+					<section id="title-slide" class="center">
+						<h2>Designing with Development in Mind</h2>
+						<p>Bradford Campeau-Laurion / @potatomaster<br />alleyinteractive.com</p>
+					</section>
+
+					<section class="center">
+						<h2><img src="images/logo.png" alt="Alley Interactive" id="title-logo" /></h2>
+						<ul>
+							<li class="fragment">Founded in 2010</li>
+							<li class="fragment">We build big websites for leaders in media,<br />entertainment and higher education</li>
+							<li class="fragment">WordPress.com VIP partner</li>
+						</ul>
+						<aside class="notes">VIP gives you an idea of the size and scale of sites we work with.<br/ >
+						One interesting thing to note is that we started off solely as a development agency...
+					</section>
+				</section>
+
+				<section class="center">
+					<section class="center">
+						<h2>Design at Alley Interactive</h2>
+						<aside class="notes">We have thought about the biggest challenges facing the design and development process. We started solely as a software development agency and after years of working with outside agencies, we felt the best way to solve the problem was to start our own. The lessons that we learned can help everyone here design more effectively.</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Eliminating the Waterfall</h2>
+						<h3 class="fragment">(and the dreaded "Handoff")</h2>
+						<aside class="notes">The waterfall leads to the handoff. Designers think their job is done and now developers build it. In this model, there is often very little communication during the design phase. This leads to two main issues that are root of all problems I'll talk about today...</aside>
+					</section>
+					
+					 <section class="center">
+						<h2>Incomplete Designs</h2>
+						<aside class="notes">Missing styles, missing states, missing features, lack of clear direction. The designs simply don't cover everything the developer needs to build the site.</aside>
+					</section>
+						
+					<section class="center">
+						<h2>Impractical Designs</h2> 
+						<h3 class="fragment">Are You @$%#&! Kidding Me?</h3>
+						<aside class="notes">Unbuildable features lead to poorly written code that's trying to handle edge cases that don't really need to exist. It leaves developers asking - was this choice made for a reason?<br />
+						We've avoided this by establishing six key pillars to our design practice, the first of which is...</aside>
+					</section>
+				</section>
+				
+				<section class="center">
+					<section class="center">
+						<h2>Multidisciplined Teams Win</h2>
+						<aside class="notes">Conscious choice in 2013 to become a full service digital agency, uniting product strategy, design, user experience, and website development. Eliminated the painful waterfall approach to website creation where one team provides final designs to a separate team for implementation.</aside>
+					</section>
+					
+					<section class="center">
+					<img src="images/multidisciplinary-team.png" style="max-width: 60%"/>
+					<aside class="notes">This shows everyone having an equal seat at the same table. UX, design, and front and back-end development are equally important players. We employ a robust internal peer review process where information architecture, wireframes and design alike are all vetted internally before they are sent as deliverables for clients.<br />
+					The design process itself starts at literally the smallest level, which takes me to the second pillar...</aside>
+					</section>
+				</section>
+				
+				<section class="center">
+					<section class="center">
+						<h2>It Begins With Atoms</h2>
+						<aside class="notes">Atomic Design is a way of thinking about design through the metaphor of chemistry. Atoms equal small design building block s— a form field, a headline style — that combine to create entire website templates.<br />
+						Atomic design is a useful construct when approaching responsive design. It also aligns with how developers think about building a site. Let's look at an example.</aside>
+					</section>
+					
+					<section class="center">
+						<img src="images/atom-1.png" />
+						<aside class="notes">Start with the smallest building blocks - thumbnail image, headline, byline, date, excerpt.</aside>
+					</section>
+					
+					<section class="center">
+						<img src="images/atom-2.png" />
+						<aside class="notes">Build these into a module to be used on the site, like a featured lead story module you might see on the home page.</aside>
+					</section>
+					
+					<section class="center">
+						<img src="images/atom-3.png" />
+						<aside class="notes">Continue to build sets of modules to be used throughout the site.</aside>
+					</section>
+					
+					<section class="center">
+						<img src="images/atom-4.png" />
+						<aside class="notes">Create templates with sets of your modules.</aside>
+					</section>
+					
+					<section class="center">
+						<img src="images/atom-5.png" />
+						<aside class="notes">Build a website from a series of templates.</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Benefits</h2>
+						<ul>
+							<li class="fragment">Ensures consistency with colors, sizes, and typography</li>
+							<li class="fragment">Creates a clear plan for building the site</li>
+							<li class="fragment">Promotes simpler, reusable code</li>
+							<li class="fragment">It's  how developers think</li>
+						</ul>
+						<aside class="notes">Simplifies CSS, which reduces complexity of maintenance and page size/load time. Developers are involved from the start and see a clear path to building the site. Fewer "snowflakes". If using something like WordPress, easy to see how to create template includes to be reused.<br />
+						It doesn't stifle creativity. It focuses it on the type of product that you're trying to build, which has a clear goal of delivering information. It creates focus for both design and development on that common goal.<br />
+						This approach is very object-oriented, which developers understand.
+						This takes us to the third pillar, which is how we actually build these designs. This is defined by one phrase...</aside>
+					</section>
+				</section>
+				
+				<section class="center">
+					<section class="center">
+						<h2>The Browser is Best</h2>
+						<aside class="notes">With design and development under one roof, we can work differently from the traditional approach to web design where a Photoshop file is produced and handed off to developers to slice. This means...</aside>
+					</section>
+					
+					<section class="center">
+						<h2>No Photoshop</h2>
+						<h3 class="fragment">(OK, very little Photoshop)</h3>
+						<aside class="notes">While we are likely to produce some key designs in Photoshop to illustrate our ideas and to assist conversations with stakeholders, we will work primarily with wireframes and illustrative style tiles to set forth site colors, typography, iconography and other site design elements. The goal is to produce a style guide that can be used to guide implementation.<br />
+						This process eliminates the “lost in translation” effect that so often plagues the process of moving from Photoshop design to a site’s live design. Our goal is that you see your site coming to life far earlier than in a traditional design process.
+						We recognize this isn't possible for everyone's workflow especially based on the available skill so...</aside>
+					</section>
+					
+					<section class="center">
+						<h2>If You Do Photoshop...</h2>
+						<ul>
+							<li class="fragment">Don't rasterize or flatten your layers</li>
+							<li class="fragment">Avoid altering fonts</li>
+							<li class="fragment">Label your layers</li>
+							<li class="fragment">Create layers for different states</li>
+							<li class="fragment">Create a master style PSD</li>
+							<li class="fragment">Document!</li>
+						</ul>
+						<aside class="notes">I recognize this isn't always possible. If Photoshop is still required for you, follow these rules to give the developer as clear a path as possible.<br />
+						- It's better to "Convert to Smart Object", which allows the developer access the core information, like a font's size, weight, and leading.<br />
+						-  Avoid changing a font's kerning, tracking, scale, and shift, and never use alternate glyphs. These are things that are hard or impossible to build and usually unnecessary to effective information presenation.<br />
+						- Create layers for different states like hover, active, etc.<br />
+						- Master styles with:<br />
+						* 6 levels of headings<br />
+						* links (include hover state, too)<br />
+						* basic paragraph (mind the leading/line-height as well as spacing before and after the paragraph)<br />
+						* quotation<br />
+						* bulleted lists<br />
+						* numbered lists<br />
+						* tables<br />
+						- Include a document with notes on anything not-so-obvious, like "heading font is Open Sans Condensed Bold, 30pt, 40pt leading, color #111111" or "rounded corners are all a 5px radius"
+						- But regardless of how you have constructed the design, there is one other key place where designers often fail developers and that is remembering our fourth pillar...
+						</aside>
+					</section>
+				</section>
+				
+				<section class="center">
+					<section class="center">
+						<h2>Content is King</h2>
+						<aside class="notes">Every decision in building a website relates to delivering content such that it is more findable, appealing and loads faster.<br />But what designers often forget to do is use...</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Real Content</h2>
+						<aside class="notes">Designers love to use content that lines up perfectly with their designs. Never in the history of a news site has that ever worked out. Take real content from the site and use it.<br />
+						A common example of how this fails is...</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Overlays</h2>
+						<img class="fragment" src="images/headline-1.png" />
+						<img class="fragment" src="images/headline-2.png" />
+						<aside class="notes">Overlays very often fail unless they're used for something with a predictably short length. When we implemented this design, they were all nice two line headlines. That never works in practice.<br />
+						We actually spent weeks tweaking a complex Javascript algorithm that set the font size based on character count. It inevitably failed because variations on word length and spacing would throw it off. This is about to all be scrapped for a new design that simply puts the text below the image.<br />
+						And speaking of text, it's also important to be realistic about...</aside>
+					</section>
+					
+					<section class="center">
+						<h2 style="font-family:'Comic Sans MS'">Fonts</h2>
+						<ul>
+							<li class="fragment">Make sure they exist</li>
+							<li class="fragment">Don't overuse custom fonts</li>
+							<li class="fragment">Use them all from the same service</li>
+							<li class="fragment">Another reason to design in-browser</li>
+						</ul>
+						<aside class="notes">- Don't commit to something if it doesn't exist online. You can get it converted, but it can be a process involving licensing fees.<br />
+						- Developers will get blamed when the site loads slowly but they can't really help it if you're loading 1MB of fonts. It's easy to take advantage of all the fonts in TypeKit, but keep it simple. One or two distinct faces are enough to distinguish you visually.<br />
+						- Make sure they're all on the same service (like TypeKit or Google Web Fonts) so you're only loading them once and make sure they're all available and licensed.<br />
+						- Fonts in comps never look exactly the same as on the web<br />
+						Altogether, the important point to remember is...</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Design for Failure</h2>
+						<aside class="notes">I'm sure many of you have heard this before. It's been an engineering practice for decades where failure is not an option, such as in building bridges and tunnels. It's generally how the (good) hosting services we rely upon are constructed. It goes for visual design as well.<br />
+						When you're thinking about content, think about those common failure scenarios and make sure that your designs degrade smoothly if the wrong text length or the wrong size image is used. It means easier code to maintain because developers aren't coding for exceptions. That's where code becomes complex and prone to bugs.
+						These bugs have to get handled by developers and they're avoidable if you think about how the design will fail from the start.<br />
+						And the design will fail in more ways than even now if you don't remember our fifth pillar which is...<br /></aside>
+					</section>
+				</section>
+				
+				<section class="center">
+					<section class="center">
+						<h2>Think Responsive</h2>
+						<aside class="notes">Today, designs are responsive by rule, and are device and browser agnostic. We can’t assume users need the same content on their phone as they do on their desktop. Developers need to work within a framework to make responsive designs feasible to build and maintain, so from the very start...</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Design on a Grid</h2>
+						<img src="images/grid.png" />
+						<aside class="notes">Understand how the grid works and what the natural flow of elements are between breakpoints. Columns tend to collapse and then stack. Showing and hiding elements is easy. Moving to an entirely different area of the page or using a completely different design for different devices is harder. It means writing more code and making your page heavier. Think about reuse and simplicity.
+						</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Design to &infin;</h2>
+						<aside class="notes">Design to infinity, and include repeatable patterns when necessary. Let's say your photoshop canvas is 1200px wide, and you have an 1100px-wide website, with a graphical background behind it. What will that background look like if the user has a 27" monitor and they can see over 2,500 pixels of width?<br />
+						Should elements located in the corners like the logo and navigation keep extending out forever or should they stop at a reasonable width so users on a high res monitor don't have to drag their mouse all the way out to the corner to use them?<br />
+						Think about these decisions so developers don't have to wonder about them later.</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Design all states</h2>
+						<aside class="notes">There is nothing worse than getting a design and realizing a menu is missing, or a modal window, or something that could equally affect the amount of time required to build a feature. Design interactivity like hover and active states. What should happen in the navigation when an item is hovered-over? What should the sub-menus look like? What should a basic link look like on hover?<br />
+						What elements are visible at each breakpoint on the grid? Do elements flow logically as they collapse? Make sure these make sense and that the developers have a clear plan to build this within the grid you've chosen.
+						Even if you've remembered absolutely everything, inevitably something will change so remember our last pillar which is... 
+						</aside>
+					</section>
+				</section>
+				
+				<section class="center">
+					<section class="center">
+						<h2>Launch is not the Finish Line</h2>
+						<aside class="notes">The design will continue to evolve. New features will be built. You need to establish rules to guide developers through that process.</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Create Guidelines</h2>
+						<ul>
+							<li class="fragment">Style Tiles</li>
+							<li class="fragment">Style Guide</li>
+						</ul>
+						<aside class="notes">Scenarios will exist that weren't explicitly covered in the designs, even during the initial implementation. These will only become more frequent as ongoing site maintenance takes place and new features are added. Don't make developers guess, give them a guide.<br />
+						Style Tiles are a design deliverable consisting of fonts, colors and interface elements that communicate the essence of a visual brand for the web. They help form a common visual language between the designers and developers (as well as the stakeholders/clients). Style Tiles are similar to the paint chips and fabric swatches an interior designer gets approval on before designing a room. (http://styletil.es/)<br />
+						Style Guides cover everything else - fonts, colors, spacing, common elements, etc. This is the definitive reference to be referred to when making any implementation decision.</aside>
+					</section>
+				</section>
+
+				<section class="center">
+					<section class="center">
+						<h2>Conclusions</h2>
+						</pre>
+						<aside class="notes">Part of what makes our design process successful is that everyone understands code to some degree. This is important because...</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Don't design the impossible</h2>
+						</pre>
+						<aside class="notes">There is nothing worse as a developer than spending multiple cycles tweaking a purely visual element. A news site needs to present information effectively first and foremost. Think about how to be practical as much as beautiful.</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Learn some code</h2>
+						</pre>
+						<aside class="notes">Everyone on our team knows a little code. It helps them to understand what's possible and what isn't. Code isn't that scary.</aside>
+					</section>
+					
+					<section class="center">
+						<h2>Work Together</h2>
+						<h3 class="fragment">The best way to design <b>FOR</b> development<br /> is to design <b>WITH</b> developers</h3>
+						</pre>
+						<aside class="notes">The best way to design FOR development is to design WITH developers. Work together and you'll build better products faster.</aside>
+					</section>
+				</section>
+
+				<section class="center">
+					<section class="center">
+						<h2>The End</h2>
+						<p>Want to learn more?</p>
+						<p>brad@alleyinteractive.com</p>
+					</section>
+					
+					<section class="center">
+						<h2>We're Hiring!</h2>
+						<p>info@alleyinteractive.com</p>
+					</section>
+				</section>
+
+			</div>
+
+			<img src="images/logo.png" alt="Alley Interactive" id="logo" />
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+				rollingLinks: false,
+				transition: 'default',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
